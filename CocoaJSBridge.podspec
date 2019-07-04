@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/448654003@qq.com/CocoaJSBridge'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '448654003@qq.com' => '448654003@qq.com' }
+  s.author           = { 'liaoyaxiong' => '448654003@qq.com' }
   s.source           = { :git => 'https://github.com/448654003@qq.com/CocoaJSBridge.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -39,4 +39,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CocoaHTTPServer'
 end

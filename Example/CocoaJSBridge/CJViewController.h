@@ -9,5 +9,8 @@
 @import UIKit;
 
 @interface CJViewController : UIViewController
+@property(nonatomic, strong) NSString *url;
+@property(nonatomic, strong) NSString *filepath;
 
+- (void) newMessage:(NSDictionary *)data;
 @end

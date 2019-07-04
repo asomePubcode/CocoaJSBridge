@@ -7,12 +7,35 @@
 //
 
 #import "CJAppDelegate.h"
+#import "CJViewController.h"
+#import "HTTPServer.h"
+@interface CJAppDelegate ()
+{
+    HTTPServer *_httpServer;
+}
+@end
 
 @implementation CJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    _httpServer = [[HTTPServer alloc] init];
+//    [_httpServer setType:@"_http._tcp."];
+//    [_httpServer setPort:5565];
+//    [_httpServer setConnectionClass:NSClassFromString(@"JSBridgeConnection")];
+////    [_httpServer setDocumentRoot:[[NSBundle mainBundle] pathForResource:@"build" ofType:nil]];
+//    NSError *error = nil;
+//    [_httpServer start:&error];
+//    NSLog(@"websocket numbers %@",[_httpServer valueForKey:@"webSockets"]);
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    CJViewController *mvc = [CJViewController new];
+    mvc.url = @"http://172.24.27.30:3000";
+//    mvc.url = @"http://192.168.0.141:3000";
+    
+//    mvc.url = @"https://www.baidu.com";
+    //    mvc.filepath = @"";
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mvc];
     return YES;
 }
 

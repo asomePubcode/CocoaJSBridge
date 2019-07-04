@@ -1,16 +1,8 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '8.0'
 
 target 'CocoaJSBridge_Example' do
   pod 'CocoaJSBridge', :path => '../'
-
-  target 'CocoaJSBridge_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
-  end
+#  pod 'WebViewJavascriptBridge'
 end
