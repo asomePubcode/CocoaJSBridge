@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CocoaJSBridge.svg?style=flat)](https://cocoapods.org/pods/CocoaJSBridge)
 [![Platform](https://img.shields.io/cocoapods/p/CocoaJSBridge.svg?style=flat)](https://cocoapods.org/pods/CocoaJSBridge)
 
+基于websocket实现的JSBridge库
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -27,3 +28,4 @@ pod 'CocoaJSBridge'
 ## License
 
 CocoaJSBridge is available under the MIT license. See the LICENSE file for more info.
+
